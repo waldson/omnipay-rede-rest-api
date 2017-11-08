@@ -1,0 +1,29 @@
+{
+    "name": "waldson/omnipay-rede",
+    "type": "library",
+    "description": "Rede driver for the Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "rede",
+        "payment"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Waldson Patrício",
+            "email": "waldsonpatricio@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\Rede\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "~2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
