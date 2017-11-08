@@ -65,7 +65,7 @@ The following methods are supported by this package:
 
 ## Support
 
-If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/thephpleague/omnipay-paypal/issues),
+If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/waldson/omnipay-rede-rest-api/issue),
 or better yet, fork the library and submit a pull request.
 
 
