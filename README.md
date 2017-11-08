@@ -67,7 +67,7 @@ if ($response->isSuccessful()) {
 
 ## Support
 
-If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/waldson/omnipay-rede-rest-api/issue),
+If you believe you have found a bug, please report it using the [GitHub issue tracker](https://github.com/waldson/omnipay-rede-rest-api/issues),
 or better yet, fork the library and submit a pull request.
 
 
