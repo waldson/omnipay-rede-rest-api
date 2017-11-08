@@ -6,12 +6,8 @@
 Omnipay is installed via [Composer](http://getcomposer.org/). To install, simply add it
 to your `composer.json` file:
 
-```json
-{
-    "require": {
-        "omnipay/rede-rest-api": "~1.0"
-    }
-}
+```
+composer require waldson/omnipay-rede-rest-api
 ```
 
 
@@ -33,7 +29,7 @@ The following gateway is provided by this package:
 
 ### Example
 
-```
+```php
 use Omnipay\Omnipay;
 
 $gateway = Omnipay::create('Rede');
