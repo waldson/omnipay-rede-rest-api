@@ -3,8 +3,7 @@
 
 ## Installation
 
-Omnipay is installed via [Composer](http://getcomposer.org/). To install, simply add it
-to your `composer.json` file:
+This library is installed via [Composer](http://getcomposer.org/). To install it, call:
 
 ```
 composer require waldson/omnipay-rede-rest-api
