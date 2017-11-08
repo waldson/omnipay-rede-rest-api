@@ -14,11 +14,6 @@ to your `composer.json` file:
 }
 ```
 
-## Basic Usage
-
-The following gateway is provided by this package:
-
-* Rede
 
 ## Supported Methods
 
@@ -30,7 +25,13 @@ The following methods are supported by this package:
 * `refund`
 * `fetchTransaction`
 
-## Example
+## Basic Usage
+
+The following gateway is provided by this package:
+
+* Rede
+
+### Example
 
 ```
 use Omnipay\Omnipay;
