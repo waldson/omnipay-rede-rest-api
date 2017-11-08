@@ -62,4 +62,43 @@ class FetchTransactionRequestTest extends TestCase
         $this->assertFalse($response->isSuccessful());
     }
 
+    public function testGetReference()
+    {
+        $reference = uniqid();
+        $gateway  = $this->getGateway();
+        $response = $gateway->fetchTransaction([
+            'reference' => $reference,
+        ]);
+
+        $this->assertEquals($reference, $response->getReference());
+    }
+
+    public function testGetData()
+    {
+        $reference = uniqid();
+        $gateway  = $this->getGateway();
+        $response = $gateway->fetchTransaction([
+            'reference' => $reference,
+        ]);
+
+        $data = $response->getData();
+        $this->assertEquals($reference, $data['reference']);
+
+
+        $response = $gateway->fetchTransaction([
+            'transactionId' => $reference,
+        ]);
+
+        $data = $response->getData();
+
+        $this->assertEquals($reference, $data['transactionId']);
+    }
+
+    public function testMustThrowWhenRequestIsInvalid()
+    {
+        $this->expectException(\Exception::class);
+        $gateway  = $this->getGateway();
+        $response = $gateway->fetchTransaction([])->send();
+    }
+
 }

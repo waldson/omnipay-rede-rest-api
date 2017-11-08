@@ -18,6 +18,7 @@ class ResponseTest extends TestCase
         $request = $this->getGateway()->purchase();
         $this->response = new Response($request, [
             'returnCode' => '00',
+            'returnMessage' => 'message',
             'reference'  => '01',
             'tid'        => '02'
         ], $validCodes);
@@ -43,6 +44,11 @@ class ResponseTest extends TestCase
     public function testGetTransactionId()
     {
         $this->assertEquals('02', $this->response->getTransactionId());
+    }
+
+    public function testGetMessage()
+    {
+        $this->assertEquals('message', $this->response->getMessage());
     }
 
 }

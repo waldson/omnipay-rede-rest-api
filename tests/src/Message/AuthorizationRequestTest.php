@@ -170,4 +170,10 @@ class AuthorizationRequestTest extends TestCase
         $this->object->setReference(uniqid());
     }
 
+    public function testGetAuthToken()
+    {
+        $this->assertEquals(AbstractRequestTest::TOKEN, $this->object->getAuthToken());
+    }
+
+
 }

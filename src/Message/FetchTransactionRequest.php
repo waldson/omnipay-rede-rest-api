@@ -48,7 +48,7 @@ class FetchTransactionRequest extends AbstractRequest
             ];
         }
 
-        $this->validate('transactionId', 'reference');
+        throw new \InvalidArgumentException('"transactionId" or "reference" must be provided.');
     }
 
     public function getReference()

@@ -15,6 +15,9 @@ class AbstractRequestTest extends TestCase
      */
     protected $object;
 
+    //default token (from documentation)
+    const TOKEN = 'NTAwNzk1NTc6NDkxM2JiMjRhMDI4NDk1NGJlNzJjNDI1OGUyMjliODY=';
+
 
     /**
      * Sets up the fixture, for example, opens a network connection.
@@ -25,7 +28,7 @@ class AbstractRequestTest extends TestCase
         $this->object  = $this->createMock(AbstractRequest::class, [
             $this->getHttpClient(),
             $this->getHttpRequest(),
-            'NTAwNzk1NTc6NDkxM2JiMjRhMDI4NDk1NGJlNzJjNDI1OGUyMjliODY=',//token de homologação do manual
+            self::TOKEN,
             \Omnipay\Rede\Gateway::TEST_ENDPOINT
         ]);
     }
