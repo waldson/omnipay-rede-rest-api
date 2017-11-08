@@ -20,7 +20,17 @@ The following gateway is provided by this package:
 
 * Rede
 
-### Examples
+## Supported Methods
+
+The following methods are supported by this package:
+
+* `authorize`
+* `capture`
+* `purchase` (`authorize` + `catpure` in a single step)
+* `refund`
+* `fetchTransaction`
+
+## Example
 
 ```
 use Omnipay\Omnipay;
@@ -53,15 +63,6 @@ if ($response->isSuccessful()) {
 }
 ```
 
-## Supported Methods
-
-The following methods are supported by this package:
-
-* `authorize`
-* `capture`
-* `purchase` (`authorize` + `catpure` in a single step)
-* `refund`
-* `fetchTransaction`
 
 ## Support
 
