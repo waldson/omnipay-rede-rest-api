@@ -1,5 +1,5 @@
 {
-    "name": "waldson/omnipay-rede",
+    "name": "waldson/omnipay-rede-rest-api",
     "type": "library",
     "description": "Rede driver for the Omnipay payment processing library",
     "keywords": [
